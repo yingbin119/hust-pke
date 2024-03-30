@@ -1,0 +1,16 @@
+mkdir /RAMDISK0/sub_dir
+touch /RAMDISK0/sub_dir/ramfile1
+touch /RAMDISK0/sub_dir/ramfile2
+echo /RAMDISK0/sub_dir/ramfile1
+cat /RAMDISK0/sub_dir/ramfile1
+ls /RAMDISK0/sub_dir
+ls /RAMDISK0
+END END
+mkdir /RAMDISK0/sub_dir
+cd /RAMDISK0/sub_dir
+cow
+backtrace
+errorline
+sem
+pagefault
+ls ./
